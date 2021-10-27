@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #E9E9EC;
+}
+
+nav {
+    height: 10rem;
+    background-image: linear-gradient(90deg, rgba(57,73,97,1) 0%, rgba(36,39,55,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    font-size: 4rem;
+    color: #E9E9EC;
+    display: block;
+    margin: auto;
+
+}
+
+.comicDiv {
+    display: none;
+    padding: 2rem;
+}
+
+.titleDiv, .transcriptDiv {
+    margin: 5rem 25rem;
+    border-radius: 10px;
+    background-color: white;
+    padding: 1rem 0;
+    color: #394961;
+}
+
+.titleDiv__h2, .comicDiv .transcriptDiv h2 {
+    margin-top: 4rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #6180B0;
+}
+
+.titleDiv h3, .titleDiv h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.titleDiv img {
+    display: block;
+    margin: 5rem auto;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+#noTranscript {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: none;
+}
+
+.transcriptContent {
+    margin: 2rem 0;
+}
+
+.transcriptSpan {
+    font-size: 2rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #394961
+}
+
+.buttonsDiv {
+    margin-top: 1rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.buttonsDiv button {
+    font-size: 2rem;
+    padding: 1rem 2.4rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prevButton {
+    background: linear-gradient(90deg, rgba(36,39,55,1) 0%, rgba(57,73,97,1) 100%);
+    color: #E9E9EC;
+    border: none;
+}
+
+.randomButton {
+    background-color: #E9E9EC;
+    color: #394961;
+    border: 1px solid #394961;
+}
+
+.nextButton {
+    background-image: linear-gradient(90deg, rgba(57,73,97,1) 0%, rgba(36,39,55,1) 100%);
+    color: #E9E9EC;
+    border: none;
+}
+
+.randomButton:hover {
+    background-color: #6180B0;
+    color: #E9E9EC;
+}
+
+.nextButton:hover, .prevButton:hover {
+    background: linear-gradient(90deg, rgba(97,109,129,1) 0%, rgba(136,146,160,1) 100%);
+    color: #E9E9EC;
+    border: none;
+}
+
+
+@media screen and (max-device-width: 1024px) {
+    .comicDiv {
+        padding: 2rem 0;
+    }
+
+    .titleDiv, .transcriptDiv {
+        margin: 5rem 1rem;
+    }
+
+    .titleDiv .titleDiv__h2, .comicDiv .transcriptDiv h2 {
+        font-size: 2rem;
+    }
+
+    .buttonsDiv {
+        margin-top: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        flex-direction: column;
+    }
+
+    .buttonsDiv button {
+        font-size: 2rem;
+        padding: 1rem 2.4rem;
+        margin-bottom: 2.4rem;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (min-device-width: 530px) and (max-device-width: 1024px) {
+
+    .titleDiv, .transcriptDiv {
+        margin: 5rem 3rem;
+    }
+
+    .buttonsDiv {
+        flex-direction: row;
+    }
+
+
+
+}
+
+
+
+
+
+

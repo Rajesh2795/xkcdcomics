@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xkcd web comics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<nav>
+    <a href="/">xkcd comics</a>
+</nav>
+
+<div id="comicdiv" class="comicDiv">
+
+    <div class="titleDiv">
+        <h2 class="titleDiv__h2" id="comicTitle">Comic Title</h2>
+        <h3 class="titleDiv__h3" id="dateTag">Date created at: January, 2022</h3>
+        <h4 class="titleDiv__h4" id="timesVisited">Times visited: 3</h4>
+        <img class="titleDiv__image" src="" id="comicImage" alt="Comic Image" />
+    </div>
+
+    <div id="transcriptdiv" class="transcriptDiv">
+        <h2>Transcript</h2>
+        <h3 id="noTranscript">No transcript is provided</h3>
+        <div id="transcriptContent" class="transcriptContent"></div>
+    </div>
+
+    <div class="buttonsDiv">
+        <button onclick="handlePrev()" type="button" id="prevbutton" class="prevButton">Prev</button>
+        <button onclick="handleRandom()" type="button" id="randombutton" class="randomButton">Random</button>
+        <button onclick="handleNext()" type="button" id="nextbutton" class="nextButton">Next</button>
+    </div>
+</div>
+
+<script src="/src/index.js"></script>
+</body>
+</html>
